@@ -1,0 +1,13 @@
+{
+  "name": "minimal-frontend",
+  "version": "1.0.0",
+  "scripts": {
+    "build:css": "tailwindcss -i ./styles.css -o ./dist/output.css --minify",
+    "build:ts": "tsc",
+    "build": "npm run build:css && npm run build:ts"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.3.3"
+  }
+}
